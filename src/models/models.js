@@ -5,20 +5,20 @@ const Schema = mongoose.Schema;
 export const ProductSchema = new Schema({
   name: {
     type: String,
-    required: 'Product name is required.'
+    required: 'Enter a product name'
   },
   description: {
     type: String,
-    required: 'Product description is required.'
-  }
+    required: 'Enter a description'
+  },
   category: {
-    type: String,
-  }
+    type: String
+  },
   price: {
-    type: Number,
-  }
+    type: Number
+  },
   created_date: {
     type: Date,
     default: Date.now
   }
-})
+});
